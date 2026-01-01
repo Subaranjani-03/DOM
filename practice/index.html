@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twirls & Pearls</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="color">
+      <!-- header -->
+      <div class="header">
+        <div class="nav">
+          <a href="/" class="brand">Twirls & Pearls</a>
+          <div class="nav-link">
+            <a href="/">Home</a>
+            <a href="/">Product</a>
+            <a href="/">Pricing</a>
+            <a href="/">Contact</a>
+          </div>
+          <div class="btn">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="count">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- home content -->
+      <div class="home-content">
+        <div class="left-home-content">
+          <div class="content">
+            <p class="content-join">Contact Us</p>
+            <h1>Classic Charm, Modern Style</h1>
+            <p class="para">
+              Discover dresses that twirl with happiness and shine with timeless
+              beauty.
+            </p>
+            <div class="button">
+              <button onclick="addToCart()" class="cart">Add To Cart</button>
+              <button onclick="addToCartDecre()" class="cart1">
+                Remove Item
+              </button>
+
+              <button onclick="theme()" class="cart">Choose Theme</button>
+              <input type="color" id="themecolor" />
+            </div>
+          </div>
+        </div>
+        <div class="right-home-content">
+          <div class="bg-box">
+            <img src="./image/d3.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>
