@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form action="">
+        <h2>Students Marklist</h2>
+        
+        <div class="inputs">
+            <label for="name">Name :</label>
+            <input type="text" name="name" id="name">
+            <span class="error" id="nameErr"></span>
+
+            <label for="tam">Tamil Mark :</label>
+            <input type="number" name="tam" id="tam">
+            <span class="error" id="tamErr"></span>
+
+            <label for="eng">English Mark :</label>
+            <input type="number" name="eng" id="eng">
+            <span class="error" id="engErr"></span>
+
+            <label for="mat">Maths Mark :</label>
+            <input type="number" name="mat" id="mat">
+            <span class="error" id="matErr"></span>
+
+            <label for="sci">Sciene Mark :</label>
+            <input type="number" name="sci" id="sci">
+            <span class="error" id="sciErr"></span>
+
+            <label for="soc">Social Mark :</label>
+            <input type="number" name="soc" id="soc">
+            <span class="error" id="socErr"></span>
+            
+        </div>
+
+        <button type="button" onclick="markForm()">Submit</button>
+
+        <div class="result">
+            <p id="user"></p>
+            <p id="total"></p>
+        </div>
+    </form>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

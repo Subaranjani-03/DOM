@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Calculation Task</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <h2 class="title">Total Mark Calculation</h2>
+      <div class="card">
+        <input type="number" id="tamil" placeholder="Enter Tamil Mark" />
+        <span id="tamError" class="error"></span><br />
+
+        <input type="number" id="english" placeholder="Enter English Mark" />
+        <span id="engError" class="error"></span><br />
+
+        <input type="number" id="maths" placeholder="Enter Maths Mark" />
+        <span id="matError" class="error"></span><br />
+
+        <input type="number" id="science" placeholder="Enter Science Mark" />
+        <span id="sciError" class="error"></span><br />
+
+        <input type="number" id="social" placeholder="Enter Social Mark" />
+        <span id="socError" class="error"></span><br />
+      </div>
+
+      <button onclick="total()">SUBMIT</button>
+      <h2 id="totalCalc"></h2>
+    </div>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

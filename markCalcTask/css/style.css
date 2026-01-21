@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.box {
+  /* border: 1px solid purple; */
+  height: auto;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 30px 10px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 20px;
+  background: linear-gradient(
+    to bottom right,
+    #e79042,
+    #df8b54,
+    #c3768f,
+    #a15dd5,
+    #8f50fa
+  );
+  box-shadow: 0 0 10px;
+}
+.box .title {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.box .card {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.box .card input {
+  width: 400px;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 8px;
+}
+.box .card input::placeholder {
+  font-size: 0.9rem;
+}
+.card .error {
+  color: white;
+  padding: 8px 0 0 3px;
+}
+button {
+  padding: 15px 25px;
+  font-size: 1.1rem;
+  color: purple;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+.box #totalCalc {
+  color: white;
+}
