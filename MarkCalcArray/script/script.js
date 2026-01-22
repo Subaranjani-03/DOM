@@ -123,13 +123,13 @@ let markForm = () => {
 
     if(isCheck){
 
-        //extracting name and marks with array
+        //extracting name and marks using array
         let name_mark = [name,Number(tam),Number(eng),Number(mat),Number(sci),Number(soc)]
 
         //destructuring name and marks
         let [names, ...digits] = name_mark
 
-        // total calucation using for..of
+        // total calculation using for..of
         let grandTotal = 0
 
         for(let idex of digits){
