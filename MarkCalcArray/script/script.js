@@ -20,7 +20,7 @@ let markForm = () => {
 
     // getting final result id
 
-    let user = document.getElementById('user')
+    let stud = document.getElementById('stud')
     let total = document.getElementById('total')
 
 
@@ -123,21 +123,25 @@ let markForm = () => {
 
     if(isCheck){
 
-        //extracting name and marks using array
+        //extracting name and marks with array
         let name_mark = [name,Number(tam),Number(eng),Number(mat),Number(sci),Number(soc)]
 
         //destructuring name and marks
         let [names, ...digits] = name_mark
+        // console.log(names)
+        // console.log(digits)
 
         // total calculation using for..of
-        let grandTotal = 0
+        let fullTotal = 0
 
         for(let idex of digits){
-            grandTotal += idex
+            // console.log(idex)
+            fullTotal += idex
         }
       
         // display result
-        user.innerText = `Name : ${names}`
-        total.innerText = `Total : ${grandTotal} / 500`
+        stud.innerText = `Name : ${names}`
+        total.innerText = `Total : ${fullTotal} / 500`
+
     }
 }
